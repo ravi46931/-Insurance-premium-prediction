@@ -1,14 +1,17 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class DataIngestionArtifact:
     data_file_path: str
+
 
 @dataclass
 class DataTransformationArtifact:
     train_transform_file_path: str
     test_transform_file_path: str
     preprocessor_file_path: str
+
 
 @dataclass
 class ModelTrainerArtifact:
@@ -17,6 +20,7 @@ class ModelTrainerArtifact:
     model2_file_path: str
     model3_file_path: str
     model4_file_path: str
+
 
 @dataclass
 class ModelEvaluationArtifact:

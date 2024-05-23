@@ -4,18 +4,20 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import FunctionTransformer
 
+
 def label_encode_column(column):
     le = LabelEncoder()
     return le.fit_transform(column)
 
+
 def encode_region_column(x):
-    return label_encode_column(x['region']).reshape(-1, 1)
+    return label_encode_column(x["region"]).reshape(-1, 1)
 
 
 def get_feature_names(preprocessor, input_features):
     output_feature_names = []
     for name, transformer, features in preprocessor.transformers_:
-        if name != 'remainder':
+        if name != "remainder":
             if isinstance(transformer, Pipeline):
                 # Get the actual transformer from the pipeline
                 transformer = transformer.named_steps[transformer.steps[-1][0]]
