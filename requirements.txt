@@ -1,0 +1,11 @@
+numpy 
+pandas
+colorama
+black
+scikit-learn
+xgboost
+lightgbm
+catboost
+streamlit
+
+-e .
