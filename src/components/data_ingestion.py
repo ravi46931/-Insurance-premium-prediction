@@ -8,10 +8,10 @@ from src.entity.config_entity import DataIngestionConfig
 
 
 class DataIngestion:
-    def __init__(self, data_ingestion_config: DataIngestionConfig):
+    def __init__(self, data_ingestion_config: DataIngestionConfig) -> None:
         self.data_ingestion_config = data_ingestion_config
 
-    def initiate_data_ingestion(self):
+    def initiate_data_ingestion(self) -> DataIngestionArtifact:
         try:
             logging.info("Data ingestion started..")
             df = pd.read_csv("insurance.csv")

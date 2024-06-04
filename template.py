@@ -23,6 +23,8 @@ list_of_files=[
     "src/logger/__init__.py",
     "src/exception/__init__.py",
     "experiments/.gitkeep",
+    "tests/__init__.py",
+    "tests/tests.py",
     "requirements.txt",
     "app.py",
     "main.py",

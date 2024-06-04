@@ -98,7 +98,7 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e, sys)
 
-    def initiate_data_transformation(self):
+    def initiate_data_transformation(self) -> DataTransformationArtifact:
         try:
             logging.info("Data transformation initiated...")
             df = pd.read_csv(self.data_ingestion_artifact.data_file_path)

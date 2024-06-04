@@ -2,6 +2,7 @@ numpy
 pandas
 colorama
 black
+pytest
 scikit-learn
 xgboost
 lightgbm
