@@ -7,7 +7,7 @@
 
 - This is regression project.
 - In this project we have used various algorithms as follows: 
-        <bold>Linear regression</bold>
+        **Linear regression**<br>
         <bold>Ridge regression</bold>
         <bold>Lasso regression</bold>
         <bold>Polynomial regression</bold>
